@@ -45,9 +45,9 @@ Para la prueba se deben crear las tablas en el motor de base de datos de su pref
 - El tipo de dato, de acuerdo con la estructura en la base de datos.
 - Si el registro ya existe muestre el mensaje `“El registro ya existe”`.
 
-1.3. Implementar un formulario que permita registrar los servicios contratados de los clientes. `Nota: Tener en cuenta integridad referencial.`
+  1.3. Implementar un formulario que permita registrar los servicios contratados de los clientes. `Nota: Tener en cuenta integridad referencial.`
 
-1.4. Implementar un formulario para la consulta por número de identificación, la información de un cliente y los servicios que tiene contratados.
+  1.4. Implementar un formulario para la consulta por número de identificación, la información de un cliente y los servicios que tiene contratados.
 
 TIPS:
 
@@ -108,15 +108,15 @@ Para el desarrollo de la prueba teórica, tendrás que escribir tus respuestas e
 
 2.2. ¿Qué mecanismos de seguridad incluirías en la aplicación para garantizar la protección del acceso a los datos?
 
-- RTA:
+- RTA: Implemntaria validaciones en las rutas usando JWT
 
   2.3. ¿Qué estrategia de escalabilidad recomendarías para la aplicación considerando que el crecimiento proyectado será de 1,000,000 de clientes por año?
 
-- RTA:
+- RTA:implementaria balancadores de carga los cuales distribuyan las cargas segun el servicio que mas se requiera
 
   2.4. ¿Qué patrón o patrones de diseño recomendarías para esta solución y cómo se implementarían? (Justifique)
 
-- RTA:
+- RTA:Usaria una arquitectura de microservicios
 
   2.5. ¿Qué recomendaciones harías para optimizar el manejo y la persistencia de datos de la aplicación, teniendo en cuenta que esta aplicación tiene una alta transaccionalidad?
 
@@ -125,6 +125,11 @@ Para el desarrollo de la prueba teórica, tendrás que escribir tus respuestas e
 # 3. Redes
 
 3.1. Explica la diferencia entre un router y un switch. ¿Cuándo usarías cada uno?
+
+Un switch gestiona el tráfico interno dentro de una red local, mientras que un router dirige el tráfico entre redes diferentes.
+
+SWITCH: Lo usaria para gestionar equipos en oficinas
+ROUTER: Lo usaria para conectar a internet o a redes externas
 
 3.2. Describe las siete capas del modelo OSI y menciona brevemente la función principal de cada una
 
@@ -140,11 +145,11 @@ Para el desarrollo de la prueba teórica, tendrás que escribir tus respuestas e
 
 4.2. ¿En qué grupo de procesos de la dirección de proyectos es creada el acta de constitución del proyecto?
 
-4.3. El equipo de proyecto acaba de completar el primer cronograma y presupuesto del proyecto. La próxima cosa a hacer es:********\_********
+4.3. El equipo de proyecto acaba de completar el primer cronograma y presupuesto del proyecto. La próxima cosa a hacer es:**\*\*\*\***\_**\*\*\*\***
 
-4.4. Un primer cronograma del proyecto puede ser creado solamente después de crear: **********\_\_\_\_**********
+4.4. Un primer cronograma del proyecto puede ser creado solamente después de crear: \***\*\*\*\*\***\_\_\_\_\***\*\*\*\*\***
 
-4.5. Una persona que debe estar al mando durante la planificación de la gestión del proyecto es:************\_\_************
+4.5. Una persona que debe estar al mando durante la planificación de la gestión del proyecto es:\***\*\*\*\*\*\*\***\_\_\***\*\*\*\*\*\*\***
 
 4.6. ¿Cuál de son las entradas del grupo de procesos de inicio de un proyecto?
 
@@ -161,5 +166,11 @@ Para el desarrollo de la prueba teórica, tendrás que escribir tus respuestas e
 Celsia internet en su proceso de expansión, se ha fijado como meta un crecimiento para los proximos 5 años donde se espera tener un millon de clientes. Para el que el proceso de facturación y recaudo sea efectivo, se requiere que el sistema de liquidación mensual de procese en los tiempos de corte establecidos de acuerdo con los ciclos de facturación definidos, los servicios que han sido prestados a sus clientes y las novedades reportadas en cada periodo. Que estrategias implementaría en el desarrollo de los componentes de liquidación y facturación masiva de servicios por ciclo y el recaudo de los pagos de las factura, buscando que el sistema sea robusto, escalable, resiliente, confiable y mantenible en el tiempo, ademas de la seguridad de la infomración y el tratamiento de los datos personales de los clientes.
 
 Describa o diseñe las estrategias que incluiría para dar solución a los requerimientos solicitados en la implementación de los componentes descritos (Justifique la priorización de ciertos atributos sobre otros atributos de calidad en la propuesta de solución).
+
+// Segun mi conocimiento considero que se podria hacer un sstema basado en microservicios automatizado como puede ser con jenkins, con esto se podria gestionar la carga de peticiones al sistema con balanceadores de carga.
+
+con esta arquitectura se logra tambien poder escalarla de manera continua segun las necesidades, implmentado nuevos modulos y permitiendo tener aislado la informacion respectiva a la facturacion, novedades en los servicos de ciclo y el recaudo de los pagos de la factura, logrando una gran eficiencia y previniendo caidas o fallas en el sistema.
+
+La seguridad de la informacion se podria implementar con autenticacion y autorizacion de tokens dinamicos, aunque no es mi fuerte la ciberseguridad es una propuesta inicial la cual sé que puede mejorar o cambiar.
 
 ### Por último, y no menos importante, te deseamos mucha suerte y esperamos que disfrutes haciendo la prueba. El objetivo es evaluar tu conocimiento, capacidad de adaptabilidad y habilidad para resolver problemas.

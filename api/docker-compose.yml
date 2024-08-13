@@ -1,8 +1,15 @@
-version: "3"
-
-networks:
-
-services:
-  db:
-
-  api:
+version : "3.7"
+services :
+  proyectos_micros :
+    container_name : proyectos-celsia
+    image : proyectos-celsia:v1
+    build :
+      context: .
+    ports:
+      - "4000:4000"
+    networks :
+      - proyectos-app
+networks :
+  proyectos-app:
+      
+       

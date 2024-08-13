@@ -1,4 +1,14 @@
 # Dockerfile for the API
+FROM node:16
 
+WORKDIR /usr/src/app
 
-ENTRYPOINT []
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 4000
+
+CMD ["node", "server"]
