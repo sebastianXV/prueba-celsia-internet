@@ -66,7 +66,7 @@ export const CreateCliente = () => {
                 <Form.Control
                   type="text"
                   requiered
-                  placeholder="El título"
+                  placeholder=""
                   value={form.nombres}
                   onChange={(e) => {
                     setForm({ ...form, titulo: e.target.value });
@@ -74,7 +74,7 @@ export const CreateCliente = () => {
                 />
               </Form.Group>
               <Form.Group as={Col}>
-                <Form.Label>apellidos</Form.Label>
+                <Form.Label>Apellidos</Form.Label>
                 <Form.Control
                   type="text"
                   requiered
@@ -84,18 +84,27 @@ export const CreateCliente = () => {
                     setForm({ ...form, apellidos: e.target.value });
                   }}
                 />
-              </Form.Group>
-              <Form.Group as={Col}>
-                <Form.Label>tipoIdentificacion</Form.Label>
-                <Form.Control
-                  type="text"
-                  requiered
-                  placeholder="apellidos"
-                  value={form.tipoIdentificacion}
-                  onChange={(e) => {
-                    setForm({ ...form, tipoIdentificacion: e.target.value });
-                  }}
-                />
+                <Form.Group as={Col}>
+                  <Form.Label>Fecha de Nacimiento</Form.Label>
+                  <form noValidate>
+                    <TextField
+                      id="date"
+                      label="Birthday"
+                      type="date"
+                      defaultValue="2017-05-24"
+                      InputLabelProps={{
+                        shrink: true,
+                      }}
+                      onChange={(e) => {
+                        setForm({
+                          ...form,
+                          fechaNacimiento: e.target.value,
+                        });
+                      }}
+                    />
+                  </form>
+                </Form.Group>
+                
               </Form.Group>
 
               <Form.Label>Tipo de Identificacion</Form.Label>
