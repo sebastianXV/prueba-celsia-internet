@@ -3,18 +3,20 @@ const { request, response } = require("express");
 
 const createCliente = async (req = request, res = response) => {
   const {
-    nombre,
+    nombres,
     apellidos,
     tipoIdentificacion,
+    identificacion,
     fechaNacimiento,
     numeroCelular,
     correoElectronico,
   } = req.body;
   try {
     const cliente = new Cliente({
-      nombre,
+      nombres,
       apellidos,
       tipoIdentificacion,
+      identificacion,
       fechaNacimiento,
       numeroCelular,
       correoElectronico,

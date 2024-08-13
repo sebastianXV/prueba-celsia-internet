@@ -94,7 +94,6 @@ export const CreateCliente = () => {
                         id="date"
                         label="Birthday"
                         type="date"
-                        defaultValue="2017-05-24"
                         InputLabelProps={{
                           shrink: true,
                         }}
@@ -144,6 +143,18 @@ export const CreateCliente = () => {
                 value={form.numeroCelular}
                 onChange={(e) => {
                   setForm({ ...form, numeroCelular: e.target.value });
+                }}
+              />
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Label>Identificacion</Form.Label>
+              <Form.Control
+                type="number"
+                requiered
+                placeholder=""
+                value={form.identificacion}
+                onChange={(e) => {
+                  setForm({ ...form, identificacion: e.target.value });
                 }}
               />
             </Form.Group>
