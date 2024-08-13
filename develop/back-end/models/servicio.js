@@ -5,6 +5,12 @@ const ServicioSchema = Schema({
         type: String,
         required: true
     },
+    servicio:{
+        type: String,
+        required: true,
+        enum: ['Internet 200 MB', 'Internet 400 MB', 'Internet 600 MB', 'Directv Go', 'Paramount+',
+            'Win+']
+    },
     fechaInicio: {
         type: Date,
         required: true

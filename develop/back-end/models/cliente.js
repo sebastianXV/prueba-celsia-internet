@@ -12,7 +12,6 @@ const ClienteSchema = new Schema({
     apellidos: {
         type: String,
         required: true,
-        unique: true
     },
     tipoIdentificacion: {
         type: String,
@@ -21,7 +20,6 @@ const ClienteSchema = new Schema({
     fechaNacimiento: {
         type: Date,
         required: true,
-        unique: true
     },
     numeroCelular: {
         type: String,
