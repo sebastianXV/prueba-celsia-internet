@@ -101,6 +101,22 @@ export const EditCliente = () => {
               </Form.Group>
             </Row>
 
+            <Form.Group as={Col} controlId="formGridState">
+                <Form.Label>Identificacion</Form.Label>
+                <Form.Control
+                  type="text"
+                  requiered
+                  placeholder=""
+                  value={clienteData.identificacion}
+                  onChange={(e) => {
+                    setClienteData({
+                      ...clienteData,
+                      identificacion: e.target.value,
+                    });
+                  }}
+                />
+              </Form.Group>
+
             <Row className="mb-3">
               <Form.Group as={Col}>
                 <Form.Label>Fecha de Nacimiento</Form.Label>

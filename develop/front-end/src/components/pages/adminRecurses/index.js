@@ -44,13 +44,13 @@ export const AdminRecurses = () => {
 
     return (
         <Container >
-            <h2>Administración de Recursos</h2>
+            <h2>Listado de clientes</h2>
             {cliente.map((clientes) => (
                 <Paper key={clientes._id} style={{ marginBottom: '20px', padding: '10px' }}>
                     <Grid container spacing={2}>
                         <Grid item>
                             <ButtonBase sx={{ width: 128, height: 128 }}>
-                                <Img alt="complex" src={clientes.imagenPortada} />
+                                <Img alt="imgUsuario" src={"img/perfil-de-usuario.webp"} />
                             </ButtonBase>
                         </Grid>
                         <Grid item xs={3} sm container>

@@ -17,7 +17,6 @@ const ClienteSchema = new Schema({
     tipoIdentificacion: {
         type: String,
         required: true,
-        unique: true
     },
     fechaNacimiento: {
         type: Date,
