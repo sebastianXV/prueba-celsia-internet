@@ -31,8 +31,7 @@ function App() {
           <Header />
           <Container className='mt-3'>
             <Routes>
-              <Route path='/' element={<Body />} />
-              <Route path='/dashboard' element={<Dashboard />} />
+              <Route path='/' element={<Dashboard />} />
               <Route path='/dashboard/createCliente' element={<CreateCliente />} />
               <Route path='/dashboard/adminRecurses' element={<AdminRecurses />} />
               <Route path='/dashboard/editar/:id' element={<EditCliente />} />

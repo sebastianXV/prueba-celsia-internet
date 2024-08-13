@@ -15,8 +15,8 @@ function Header() {
           <Container fluid>
             <Link to="/">
               <img
-                src="img/logoCelsia"
-                width="150px"
+                src="img/logoCelsia.png"
+                width="100px"
                 height="autopx"
                 className="d-inline-block align-top"
                 alt="React Bootstrap logo"

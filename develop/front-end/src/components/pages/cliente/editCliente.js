@@ -1,10 +1,9 @@
-import { Card, Container, Button, Col, Form, Row } from "react-bootstrap";
-import TextField from '@material-ui/core/TextField';
+import { Container, Button, Col, Form, Row } from "react-bootstrap";
+import TextField from '@mui/material/TextField';
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {
   listarCliente,
-  getClienteByID,
   updateByID,
 } from "../../../api/cliente";
 
