@@ -139,25 +139,34 @@ ROUTER: Lo usaria para conectar a internet o a redes externas
 
 3.5. ¿Puedes mencionar algunos protocolos de enrutamiento dinámico y explicar brevemente cómo funcionan?
 
+
 # 4. Gestión de Proyectos
 
 4.1. ¿En qué grupos de procesos de dirección de proyectos es creado un presupuesto detallado del proyecto?
 
 4.2. ¿En qué grupo de procesos de la dirección de proyectos es creada el acta de constitución del proyecto?
 
-4.3. El equipo de proyecto acaba de completar el primer cronograma y presupuesto del proyecto. La próxima cosa a hacer es:**\*\*\*\***\_**\*\*\*\***
+4.3. El equipo de proyecto acaba de completar el primer cronograma y presupuesto del proyecto. La próxima cosa a hacer es:
+Hacer el diseño del proyecto
+Crear el plan de comunicación
 
-4.4. Un primer cronograma del proyecto puede ser creado solamente después de crear: \***\*\*\*\*\***\_\_\_\_\***\*\*\*\*\***
+4.4. Un primer cronograma del proyecto puede ser creado solamente después de crear:
+El acta de constitución del proyecto
 
-4.5. Una persona que debe estar al mando durante la planificación de la gestión del proyecto es:\***\*\*\*\*\*\*\***\_\_\***\*\*\*\*\*\*\***
+4.5. Una persona que debe estar al mando durante la planificación de la gestión del proyecto es:
+El gerente de proyecto
 
 4.6. ¿Cuál de son las entradas del grupo de procesos de inicio de un proyecto?
 
+
 4.7. El patrocinador del proyecto acaba de aprobar el acta de constitución del proyecto, ¿cuál es la próxima cosa a hacer?
+establecer las restricciones de alto nivel del cronograma
 
 4.8. Acaban de ser establecidas las restricciones de alto nivel del cronograma del proyecto. ¿En qué grupo de procesos de dirección de proyectos se encuentra?
+en el analisis y diseño
 
 4.9. ¿Qué grupos de procesos deben ser incluidos en cada proyecto?
+analisis, desarrollo, testeo, retroalimentacion
 
 4.10. ¿Qué grupo de procesos de la dirección de proyecto necesita normalmente el mayor tiempo y número de recursos?
 
@@ -171,6 +180,8 @@ Describa o diseñe las estrategias que incluiría para dar solución a los reque
 
 con esta arquitectura se logra tambien poder escalarla de manera continua segun las necesidades, implmentado nuevos modulos y permitiendo tener aislado la informacion respectiva a la facturacion, novedades en los servicos de ciclo y el recaudo de los pagos de la factura, logrando una gran eficiencia y previniendo caidas o fallas en el sistema.
 
-La seguridad de la informacion se podria implementar con autenticacion y autorizacion de tokens dinamicos, aunque no es mi fuerte la ciberseguridad es una propuesta inicial la cual sé que puede mejorar o cambiar.
+La seguridad de la informacion se podria implementar con autenticacion y autorizacion de tokens dinamicos
+
+Aunque no es mi fuerte la ciberseguridad es una propuesta inicial la cual sé que puede mejorar o cambiar, al igual que mi conocimiento, estaria encantado de aprender y mejorar :).
 
 ### Por último, y no menos importante, te deseamos mucha suerte y esperamos que disfrutes haciendo la prueba. El objetivo es evaluar tu conocimiento, capacidad de adaptabilidad y habilidad para resolver problemas.
