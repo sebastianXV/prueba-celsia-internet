@@ -108,7 +108,7 @@ Para el desarrollo de la prueba teórica, tendrás que escribir tus respuestas e
 
 2.2. ¿Qué mecanismos de seguridad incluirías en la aplicación para garantizar la protección del acceso a los datos?
 
-- RTA: Implemntaria validaciones en las rutas usando JWT
+- RTA: Implementaria encriptacion de datos y wl uso de Tokens
 
   2.3. ¿Qué estrategia de escalabilidad recomendarías para la aplicación considerando que el crecimiento proyectado será de 1,000,000 de clientes por año?
 
@@ -133,7 +133,31 @@ ROUTER: Lo usaria para conectar a internet o a redes externas
 
 3.2. Describe las siete capas del modelo OSI y menciona brevemente la función principal de cada una
 
+#1. La capa física.
+El medio fisico por el cual se transmite la informacion
+
+#2. La capa de enlace de datos.
+Se encarga de transmitir los datos de manera segura
+
+#3. La capa de red.
+Proporciona conectividad
+
+#4. La capa de transporte.
+Se encarga de la comunicacion y transferencia sin mayores errores
+
+#5. La capa de sesión.
+Se encarga de la comunicacion entre aplicaciones
+
+#6. La capa de presentación.
+Se encarga de la presentacion de los datos
+
+#7. La capa de aplicación.
+Se encarga de la comunicacion entre aplicaciones y el usuario
+
 3.3. Explica las diferencias entre los protocolos TCP y UDP. Dar un ejemplo de cuándo usarías cada uno?
+
+La diferencia entre el TCP (protocolo de control de transmisiones) y el UDP (protocolo de datagramas de usuario) es que el TCP es un protocolo basado en conexiones y el UDP es sin conexiones. 
+El TCP garantiza la entrega de los datos, mientras que el UDP no lo hace.
 
 3.4. ¿Qué es una máscara de subred y cómo se utiliza para dividir una red en subredes más pequeñas?
 
@@ -205,3 +229,5 @@ La seguridad de la informacion se podria implementar con autenticacion y autoriz
 Aunque no es mi fuerte la ciberseguridad es una propuesta inicial la cual sé que puede mejorar o cambiar, al igual que mi conocimiento, estaria encantado de aprender y mejorar :).
 
 ### Por último, y no menos importante, te deseamos mucha suerte y esperamos que disfrutes haciendo la prueba. El objetivo es evaluar tu conocimiento, capacidad de adaptabilidad y habilidad para resolver problemas.
+
+### Gracias por la oportunidad!
