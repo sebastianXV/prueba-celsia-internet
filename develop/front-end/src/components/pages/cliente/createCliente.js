@@ -3,6 +3,7 @@ import "./edit.css";
 import { useEffect, useState } from "react"; // Importa useEffect y useState de React
 import { listarServicio } from "../../../api/servicio";
 import { postCliente } from "../../../api/cliente";
+import { TextField } from "@mui/material";
 
 export const CreateCliente = () => {
   const [form, setForm] = useState({
@@ -47,7 +48,7 @@ export const CreateCliente = () => {
       console.log("Cliente creado con éxito:", response);
       resetForm();
     } catch (error) {
-      console.error("Error al crear la película:", error);
+      console.error("Error al crear la el cliente:", error);
     }
   };
 
@@ -69,7 +70,7 @@ export const CreateCliente = () => {
                   placeholder=""
                   value={form.nombres}
                   onChange={(e) => {
-                    setForm({ ...form, titulo: e.target.value });
+                    setForm({ ...form, nombres: e.target.value });
                   }}
                 />
               </Form.Group>
@@ -84,27 +85,29 @@ export const CreateCliente = () => {
                     setForm({ ...form, apellidos: e.target.value });
                   }}
                 />
-                <Form.Group as={Col}>
-                  <Form.Label>Fecha de Nacimiento</Form.Label>
-                  <form noValidate>
-                    <TextField
-                      id="date"
-                      label="Birthday"
-                      type="date"
-                      defaultValue="2017-05-24"
-                      InputLabelProps={{
-                        shrink: true,
-                      }}
-                      onChange={(e) => {
-                        setForm({
-                          ...form,
-                          fechaNacimiento: e.target.value,
-                        });
-                      }}
-                    />
-                  </form>
-                </Form.Group>
-                
+
+                <Row>
+                  <Form.Group as={Col}>
+                    <Form.Label>Fecha de Nacimiento</Form.Label>
+                    <form noValidate>
+                      <TextField
+                        id="date"
+                        label="Birthday"
+                        type="date"
+                        defaultValue="2017-05-24"
+                        InputLabelProps={{
+                          shrink: true,
+                        }}
+                        onChange={(e) => {
+                          setForm({
+                            ...form,
+                            fechaNacimiento: e.target.value,
+                          });
+                        }}
+                      />
+                    </form>
+                  </Form.Group>
+                </Row>
               </Form.Group>
 
               <Form.Label>Tipo de Identificacion</Form.Label>
@@ -132,6 +135,32 @@ export const CreateCliente = () => {
                 </option>
               </Form.Select>
             </Row>
+            <Form.Group as={Col}>
+              <Form.Label>Numero de Celular</Form.Label>
+              <Form.Control
+                type="text"
+                requiered
+                placeholder=""
+                value={form.numeroCelular}
+                onChange={(e) => {
+                  setForm({ ...form, numeroCelular: e.target.value });
+                }}
+              />
+            </Form.Group>
+
+            <Form.Group as={Col}>
+              <Form.Label>Correo Electronico</Form.Label>
+              <Form.Control
+                type="text"
+                requiered
+                placeholder="sebastian@gmail.com"
+                value={form.correoElectronico}
+                onChange={(e) => {
+                  setForm({ ...form, correoElectronico: e.target.value });
+                }}
+              />
+            </Form.Group>
+
             <Button variant="primary" type="submit">
               Enviar
             </Button>
