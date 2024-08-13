@@ -112,11 +112,11 @@ Para el desarrollo de la prueba teórica, tendrás que escribir tus respuestas e
 
   2.3. ¿Qué estrategia de escalabilidad recomendarías para la aplicación considerando que el crecimiento proyectado será de 1,000,000 de clientes por año?
 
-- RTA:implementaria balancadores de carga los cuales distribuyan las cargas segun el servicio que mas se requiera
+- RTA: implementaria balancadores de carga los cuales distribuyan las cargas haciendo enfasis en el servicio que mas se requiera
 
   2.4. ¿Qué patrón o patrones de diseño recomendarías para esta solución y cómo se implementarían? (Justifique)
 
-- RTA:Usaria una arquitectura de microservicios
+- RTA: Usaria una arquitectura basada microservicios
 
   2.5. ¿Qué recomendaciones harías para optimizar el manejo y la persistencia de datos de la aplicación, teniendo en cuenta que esta aplicación tiene una alta transaccionalidad?
 
@@ -159,7 +159,7 @@ El acta de constitución del proyecto
 El gerente de proyecto
 
 4.6. ¿Cuál de son las entradas del grupo de procesos de inicio de un proyecto?
-
+El acta de constitución del proyecto
 
 4.7. El patrocinador del proyecto acaba de aprobar el acta de constitución del proyecto, ¿cuál es la próxima cosa a hacer?
 establecer las restricciones de alto nivel del cronograma
@@ -171,6 +171,7 @@ en el analisis y diseño
 levantamiento de requisitos, analisis, diseño, desarrollo, testeo, validacion, mantenimiento y evolucion
 
 4.10. ¿Qué grupo de procesos de la dirección de proyecto necesita normalmente el mayor tiempo y número de recursos?
+desarrollo e integracion 
 
 
 # 5. Caso práctico

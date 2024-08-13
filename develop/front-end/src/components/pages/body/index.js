@@ -23,7 +23,7 @@ const Body = () => {
 
 
     return (<Container>
-        <div className="movies">
+        <div className="Clientes">
             {clientes.map((clientes, idx) => (
                 <Card className="custom-card" bg="dark" text="white">
                     <Card.Img variant="top" src={clientes && clientes.imagenPortada} alt="portada" />
