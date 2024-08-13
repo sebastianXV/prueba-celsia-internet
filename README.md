@@ -143,8 +143,10 @@ ROUTER: Lo usaria para conectar a internet o a redes externas
 # 4. Gestión de Proyectos
 
 4.1. ¿En qué grupos de procesos de dirección de proyectos es creado un presupuesto detallado del proyecto?
+en el analisis de gastos
 
 4.2. ¿En qué grupo de procesos de la dirección de proyectos es creada el acta de constitución del proyecto?
+licenciamiento del proyecto
 
 4.3. El equipo de proyecto acaba de completar el primer cronograma y presupuesto del proyecto. La próxima cosa a hacer es:
 Hacer el diseño del proyecto
@@ -166,9 +168,10 @@ establecer las restricciones de alto nivel del cronograma
 en el analisis y diseño
 
 4.9. ¿Qué grupos de procesos deben ser incluidos en cada proyecto?
-analisis, desarrollo, testeo, retroalimentacion
+levantamiento de requisitos, analisis, diseño, desarrollo, testeo, validacion, mantenimiento y evolucion
 
 4.10. ¿Qué grupo de procesos de la dirección de proyecto necesita normalmente el mayor tiempo y número de recursos?
+
 
 # 5. Caso práctico
 
@@ -176,7 +179,23 @@ Celsia internet en su proceso de expansión, se ha fijado como meta un crecimien
 
 Describa o diseñe las estrategias que incluiría para dar solución a los requerimientos solicitados en la implementación de los componentes descritos (Justifique la priorización de ciertos atributos sobre otros atributos de calidad en la propuesta de solución).
 
-// Segun mi conocimiento considero que se podria hacer un sstema basado en microservicios automatizado como puede ser con jenkins, con esto se podria gestionar la carga de peticiones al sistema con balanceadores de carga.
+RESPUESTA
+## Step 1: Identificar las necesidades del proyecto
+Celsia Internet necesita un sistema de liquidación y facturación masiva de servicios por ciclo
+que sea robusto, escalable, resiliente, confiable y mantenible en el tiempo,
+además de la seguridad de la información y el tratamiento de los datos personales de los clientes.
+
+## Step 2: Desarrollar un plan de acción
+1. **Análisis de requisitos**: Identificar los requisitos funcionales y no funcionales del sistema, incluyendo la seguridad y el tratamiento de datos personales.
+
+## Step 3: Desarrollar un plan de acción
+2. **Diseño del sistema**: Diseñar un sistema que cumpla con los requisitos 
+
+## Step 4: Desarrollar un plan de acción
+3. **Implementación del sistema**: Implementar el sistema diseñado 
+
+## Step 5: Desarrollar un plan de acción
+ Segun mi conocimiento considero que se podria hacer un sstema basado en microservicios automatizado como puede ser con jenkins, con esto se podria gestionar la carga de peticiones al sistema con balanceadores de carga.
 
 con esta arquitectura se logra tambien poder escalarla de manera continua segun las necesidades, implmentado nuevos modulos y permitiendo tener aislado la informacion respectiva a la facturacion, novedades en los servicos de ciclo y el recaudo de los pagos de la factura, logrando una gran eficiencia y previniendo caidas o fallas en el sistema.
 
