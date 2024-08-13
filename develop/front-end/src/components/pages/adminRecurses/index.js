@@ -57,13 +57,13 @@ export const AdminRecurses = () => {
                             <Grid item xs container direction="column" spacing={2}>
                                 <Grid item xs>
                                     <Typography gutterBottom variant="subtitle1" component="div">
-                                        {clientes.titulo}
+                                        {clientes.nombres}
                                     </Typography>
                                     <Typography variant="body2" gutterBottom>
-                                        {clientes.sinopsis}
+                                        {clientes.apellidos}
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary">
-                                        {clientes.anioEstreno}
+                                        {clientes.fechaNacimiento}
                                     </Typography>
                                 </Grid>
                                 <Grid item>

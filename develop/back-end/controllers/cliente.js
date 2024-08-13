@@ -56,9 +56,10 @@ const getClienteById = async (req = request, res = response) => {
 const updateCliente = async (req = request, res = response) => {
   const { id } = req.params;
   const {
-    nombre,
+    nombres,
     apellidos,
     tipoIdentificacion,
+    identificacion,
     fechaNacimiento,
     numeroCelular,
     correoElectronico,
@@ -67,9 +68,10 @@ const updateCliente = async (req = request, res = response) => {
     const cliente = await Cliente.findByIdAndUpdate(
       id,
       {
-        nombre,
+        nombres,
         apellidos,
         tipoIdentificacion,
+        identificacion,
         fechaNacimiento,
         numeroCelular,
         correoElectronico,

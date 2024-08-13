@@ -1,11 +1,8 @@
 import { Container, Button, Col, Form, Row } from "react-bootstrap";
-import TextField from '@mui/material/TextField';
+import TextField from "@mui/material/TextField";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import {
-  listarCliente,
-  updateByID,
-} from "../../../api/cliente";
+import { listarCliente, updateByID } from "../../../api/cliente";
 
 export const EditCliente = () => {
   const { id } = useParams();
@@ -40,7 +37,7 @@ export const EditCliente = () => {
   return (
     <Container>
       <Row>
-        <h2 className="tittle">Crear Cliente</h2>
+        <h2 className="tittle">Editar Cliente</h2>
       </Row>
 
       <Row>
@@ -62,25 +59,27 @@ export const EditCliente = () => {
 
               <Form.Group as={Col} controlId="formGridState">
                 <Form.Label>Apellidos</Form.Label>
-                <Form.Select
-                  required
-                  value={clienteData && clienteData.apellidos}
-                  onChange={(e) =>
-                    setClienteData({
-                      ...clienteData,
-                      apellidos: e.target.value,
-                    })
-                  }
-                ></Form.Select>
+                <Form.Control
+                  type="text"
+                  requiered
+                  placeholder=""
+                  value={clienteData.apellidos}
+                  onChange={(e) => {
+                    setClienteData({ ...clienteData, apellidos: e.target.value });
+                  }}
+                />
               </Form.Group>
 
               <Form.Group as={Col}>
-                <Form.Label>tipoIdentificacion</Form.Label>
+                <Form.Label>Tipo de Identificacion</Form.Label>
                 <Form.Select
                   required
                   value={clienteData.tipoIdentificacion}
                   onChange={(e) =>
-                    setClienteData({ ...clienteData, tipoIdentificacion: e.target.value })
+                    setClienteData({
+                      ...clienteData,
+                      tipoIdentificacion: e.target.value,
+                    })
                   }
                 >
                   <option key="default" value="">
@@ -110,7 +109,7 @@ export const EditCliente = () => {
                     id="date"
                     label="Birthday"
                     type="date"
-                    defaultValue="2017-05-24"
+                    value={clienteData.fechaNacimiento}
                     InputLabelProps={{
                       shrink: true,
                     }}
@@ -126,30 +125,31 @@ export const EditCliente = () => {
 
               <Form.Group as={Col} controlId="formGridState">
                 <Form.Label>Numero Celular</Form.Label>
-                <Form.Select
-                  required
-                  value={clienteData && clienteData.numeroCelular}
-                  onChange={(e) =>
-                    setClienteData({
-                      ...clienteData,
-                      numeroCelular: e.target.value,
-                    })
-                  }
-                ></Form.Select>
+                <Form.Control
+                  type="text"
+                  requiered
+                  placeholder=""
+                  value={clienteData.numeroCelular}
+                  onChange={(e) => {
+                    setClienteData({ ...clienteData, numeroCelular: e.target.value });
+                  }}
+                />
               </Form.Group>
 
               <Form.Group as={Col} controlId="formGridState">
                 <Form.Label>Correo electronico</Form.Label>
-                <Form.Select
-                  required
-                  value={clienteData && clienteData.correoElectronico}
-                  onChange={(e) =>
+                <Form.Control
+                  type="text"
+                  requiered
+                  placeholder=""
+                  value={clienteData.correoElectronico}
+                  onChange={(e) => {
                     setClienteData({
                       ...clienteData,
                       correoElectronico: e.target.value,
-                    })
-                  }
-                ></Form.Select>
+                    });
+                  }}
+                />
               </Form.Group>
             </Row>
 
